@@ -5,6 +5,7 @@ import Footer from './Footer';
 import Home from './Home';
 import ProjectList from './ProjectList';
 import About from './About';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -25,3 +26,12 @@ function App() {
 }
 
 export default App;
+
+// Add Route for Contact
+<Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/projects" element={<ProjectList />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/contact" element={<Contact />} />  {/* New Route */}
+</Routes>
+
